@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_setup_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/setup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setup_fragment_title"
+        android:textColor="@color/text_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Settings/Configuration Section -->
+    <TextView
+        android:id="@+id/setup_info_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configure Detection Settings:"
+        android:textColor="@color/text_secondary"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Example settings (can be replaced with actual controls) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Example: Detection interval -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detection Interval (seconds)"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/detection_interval_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:backgroundTint="@color/teal_200"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:hint="Enter interval" />
+
+            <!-- Example: Toggle notifications -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable Notifications"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="16dp" />
+
+            <Switch
+                android:id="@+id/notifications_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/purple_500"
+                android:trackTint="@color/purple_700" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Save button -->
+    <Button
+        android:id="@+id/save_setup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_detection"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/text_primary" />
+
+</LinearLayout>

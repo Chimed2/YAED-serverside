@@ -1,0 +1,23 @@
+<resources>
+    <!-- App Info -->
+    <string name="app_name">Earthquake Detector</string>
+
+    <!-- Fragment Titles -->
+    <string name="status_fragment_title">Detector Status</string>
+    <string name="setup_fragment_title">Setup</string>
+    <string name="log_fragment_title">System Logs</string>
+
+    <!-- Section Labels -->
+    <string name="earthquake_log_label">Recent Earthquake Events:</string>
+    <string name="system_log_label">System Logs:</string>
+
+    <!-- Buttons / Actions -->
+    <string name="start_detection">Start Detection</string>
+    <string name="stop_detection">Stop Detection</string>
+    <string name="refresh_logs">Refresh Logs</string>
+
+    <!-- Default Messages -->
+    <string name="no_logs">No logs to display</string>
+    <string name="no_events">No earthquake events yet</string>
+
+</resources>
